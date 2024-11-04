@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
     return (
-        <div className="flex justify-between py-9 h-16 items-center pr-5 border-b-2 shadow-md border-gray-50">
+        <div className="flex justify-between py-9 h-16 items-center pr-5 border-b-2 shadow-md border-gray-50 sticky top-0 z-10 bg-white">
             <div className="flex gap-4 items-center">
                 <a href="/"><img src={logo} alt="logo sabikerja" /></a>
                 <div className=" md:flex hidden gap-6">
