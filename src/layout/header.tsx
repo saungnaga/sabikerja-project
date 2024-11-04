@@ -16,10 +16,12 @@ const Header = () => {
                     <a href="" className="hover:text-red-700">Contact Us</a>
                 </div>
             </div>
-            <button className="md:flex hidden gap-2 items-center bg-red-700 p-3 rounded text-white px-7 hover:bg-white hover:text-red-700 hover:scale-90 border-2 border-red-700 transition-all duration-200">
-                Add Job Now
-                <FontAwesomeIcon icon={faWhatsapp} />
-            </button>
+            <a href="https://wa.me/message/XLNU4NKEURDOO1" target="_blank">
+                <button className="md:flex hidden gap-2 items-center bg-red-700 p-3 rounded text-white px-7 hover:bg-white hover:text-red-700 hover:scale-90 border-2 border-red-700 transition-all duration-200">
+                    Add Job Now
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                </button>
+            </a>
             <button className="flex md:hidden">
             <FontAwesomeIcon icon={faBars} className="h-8"/>
             </button>

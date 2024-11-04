@@ -70,5 +70,46 @@ html {
     height:auto;
     width: 100%;   
   }
-  
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.hover-text {
+  display: inline-block;
+  position: relative;
+  color: #696565;
+  cursor: pointer;
+}
+
+/* Create the line */
+.hover-text::after {
+  content: '';
+  position: absolute;
+  left:0;
+  transform: translateY(10px) translateX(-14px);
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Expand the line on hover */
+.hover-text:hover::after {
+  width: 12px;
 }
